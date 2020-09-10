@@ -10,6 +10,12 @@
   min-width: 100px;
   background-color: white;
   z-index: 1;
+  transition: all 0.5s;
+}
+.product:hover {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
 }
 .product__info {
   height: 100px;
@@ -20,7 +26,7 @@
   margin-top: 5px;
 }
 .product__rating {
-  color: yellow;
+  color: #f0c14b;
 }
 .product > img {
   max-height: 200px;
@@ -34,4 +40,10 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.product > button:hover {
+  transform: scale(1.5);
+  background-color: #cfa846;
 }
